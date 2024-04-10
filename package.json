@@ -1,0 +1,17 @@
+{
+  "name": "jscodeshift-seedtag",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "jest",
+    "run-dry": "npx jscodeshift -t ./src/from-ava-to-jest.ts --extensions=ts --parser=ts './../test/**/*.ts' --print --dry"
+  },
+  "dependencies": {
+    "jscodeshift": "^0.15.2",
+    "prettier": "^3.2.5"
+  },
+  "devDependencies": {
+    "@types/jscodeshift": "0.11.11",
+    "typescript": "5.4.3"
+  }
+}
